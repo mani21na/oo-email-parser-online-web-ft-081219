@@ -13,7 +13,7 @@ class EmailAddressParser
   end
   
   def parse
-    parse_emails = email_addresses.split(", ")
+    @emails.gsub(/[\s,]/ ," ").split
     
 
     parse_emails.map{|value| value.delete(" ")}

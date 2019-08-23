@@ -20,7 +20,7 @@ class EmailAddressParser
   end
 end
 
-#email_addresses = "john@doe.com, person@somewhere.org"
-#parser = EmailAddressParser.new(email_addresses)
+email_addresses = "john@doe.com, person@somewhere.org"
+parser = EmailAddressParser.new(email_addresses)
  
-#parser.parse
+parser.parse

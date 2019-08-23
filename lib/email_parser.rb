@@ -17,7 +17,7 @@ class EmailAddressParser
 
     parse_emails.map{|value| value.delete(" ")}
     parse_emails
-# 
+  end
 end
 
 email_addresses = "john@doe.com, person@somewhere.org"

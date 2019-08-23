@@ -13,7 +13,8 @@ class EmailAddressParser
   end
   
   def parse
-    parse_emails = email_addresses.split(", "||","||" ")
+    parse_emails = email_addresses.split(", ")
+    
 
     parse_emails.map{|value| value.delete(" ")}
     parse_emails

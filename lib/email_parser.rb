@@ -14,13 +14,13 @@ class EmailAddressParser
   
   def parse
     parse_emails = email_addresses.split(","||" ")
-    parse_emails.each{|value| value.scan(/\d+/).join}
+    parse_emails.map{|value| value.scan(/\d+/).join}
     parse_emails
  #   binding.pry
   end
 end
 
-email_addresses = "john@doe.com, person@somewhere.org"
-parser = EmailAddressParser.new(email_addresses)
+#email_addresses = "john@doe.com, person@somewhere.org"
+#parser = EmailAddressParser.new(email_addresses)
  
-parser.parse
+#parser.parse

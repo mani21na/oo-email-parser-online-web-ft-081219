@@ -14,12 +14,10 @@ class EmailAddressParser
   
   def parse
     parse_emails = email_addresses.split(","||" "||", ")
-       binding.pry
+
     parse_emails.map{|value| value.delete(" ")}
-       binding.pry
     parse_emails
-   binding.pry
-  end
+#  end
 end
 
 email_addresses = "john@doe.com, person@somewhere.org"

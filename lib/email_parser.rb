@@ -13,8 +13,8 @@ class EmailAddressParser
   end
   
   def parse
-    s_emails = email_addresses.split(","||" ")
-    s_emails
+    parse_emails = email_addresses.split(","||" ")
+    parse_emails
     #binding.pry
   end
 end

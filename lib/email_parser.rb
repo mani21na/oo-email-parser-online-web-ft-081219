@@ -14,7 +14,9 @@ class EmailAddressParser
   
   def parse
     parse_emails = email_addresses.split(","||" ")
+       binding.pry
     parse_emails.find{|value| value.scan(/\d+/).join}
+       binding.pry
     parse_emails
    binding.pry
   end
